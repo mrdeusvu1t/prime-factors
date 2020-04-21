@@ -1,7 +1,5 @@
 ﻿## Task description ##
 
-Given a natural number.  
-Compute the prime factors of a given natural number.    
-_A prime number is only evenly divisible by itself and 1. Note that 1 is not a prime number._
+Given a natural number. Compute the [prime](https://en.wikipedia.org/wiki/Prime_number) factors of a given natural number.    
 
-_Tags - loops, integer operations_
+*Tags - loops, integer operations.*
