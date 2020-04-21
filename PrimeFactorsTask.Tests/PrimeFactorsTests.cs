@@ -12,7 +12,7 @@ namespace PrimeFactorsTask.Tests
         [TestCase(12, ExpectedResult = new[] {2, 2, 3})]
         [TestCase(901255, ExpectedResult = new[] {5, 17, 23, 461})]
         [TestCase(93819012551, ExpectedResult = new[] {11, 9539, 894119})]
-        public int[] GetFactorsTests(long number)
+        public int[] GetFactors_Returns_Prime_Factors(long number)
         {
             return PrimeFactors.GetFactors(number);
         }
@@ -20,7 +20,7 @@ namespace PrimeFactorsTask.Tests
         [TestCase(-100)]
         [TestCase(-1)]
         [TestCase(0)]
-        public static void GetFactorsTests_Throw_ArgumentOutOfRangeException_If_Number_Less_Or_Equals_Zero(long number)
+        public static void GetFactors_Throw_ArgumentOutOfRangeException_If_Number_Less_Or_Equals_Zero(long number)
             => Assert.Throws<ArgumentOutOfRangeException>(() =>
                 PrimeFactors.GetFactors(number), $"For {number} must be throw ArgumentOutOfRangeException.");
     }
