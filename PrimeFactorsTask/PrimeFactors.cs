@@ -11,7 +11,7 @@ namespace PrimeFactorsTask
         /// </summary>
         /// <param name="number">Source number.</param>
         /// <returns>Prime factors of a given natural number.</returns>
-        /// <exception cref="ArgumentOutOfRangeException">Number less or equal zero.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when number less or equal zero.</exception>
         /// <example>
         /// 60 => {2, 2, 3, 5}
         /// 8 => {2, 2, 2}
@@ -21,7 +21,7 @@ namespace PrimeFactorsTask
         /// </example>
         public static int[] GetFactors(long number)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("You need to implement this function.");
         }
     }
 }

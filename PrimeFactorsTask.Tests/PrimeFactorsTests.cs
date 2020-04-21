@@ -22,6 +22,6 @@ namespace PrimeFactorsTask.Tests
         [TestCase(0)]
         public static void GetFactors_Throw_ArgumentOutOfRangeException_If_Number_Less_Or_Equals_Zero(long number)
             => Assert.Throws<ArgumentOutOfRangeException>(() =>
-                PrimeFactors.GetFactors(number), $"For {number} must be throw ArgumentOutOfRangeException.");
+                PrimeFactors.GetFactors(number), $"{number} can not be less or equals zero.");
     }
 }
